@@ -34,10 +34,10 @@ export const NoteCard = ({ id, content }) => {
   }
 
   return (
-    <div className="noteCard flex items-center gap-2 rounded-lg p-3 border border-slate-200 hover:shadow-md font-medium">
+    <div className="noteCard flex items-center gap-2 rounded-lg p-8 border border-slate-200 hover:border-gray-300 hover:shadow-sm shadow-blue-500/20 font-medium bg-white transition">
       {onEdit ? (
         <textarea
-          className="  flex rounded-none focus:outline-none w-full resize-none border-b-2 "
+          className="flex rounded-none outline-none w-full resize-none border-b-2 "
           rows="3"
           value={currentContent}
           onChange={(e) => setCurrentContent(e.target.value)}
@@ -47,7 +47,7 @@ export const NoteCard = ({ id, content }) => {
       )}
       {onEdit ? (
         <button
-          className=" bg-yellow-500 transition p-2 text-xs text-slate-900 border rounded-full"
+          className="text-white bg-indigo-600 transition p-2 text-xs  border rounded-full"
           onClick={handleUpdate}
         >
           Save
