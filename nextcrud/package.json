@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
+    "geist": "^1.1.0",
     "postcss": "^8",
     "react-textarea-autosize": "^8.5.3",
     "tailwindcss": "^3.3.0"
