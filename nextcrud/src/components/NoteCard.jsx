@@ -37,13 +37,13 @@ export const NoteCard = ({ id, content }) => {
     <div className="noteCard flex items-center gap-2 rounded-lg p-8 border border-slate-200 hover:border-gray-300 hover:shadow-sm shadow-blue-500/20 font-medium bg-white transition">
       {onEdit ? (
         <textarea
-          className="flex rounded-none outline-none w-full resize-none border-b-2 "
+          className="flex rounded-none outline-none w-full resize-none border-b-2"
           rows="3"
           value={currentContent}
           onChange={(e) => setCurrentContent(e.target.value)}
         />
       ) : (
-        <div className="flex flex-col w-full ">{currentContent}</div>
+        <div className="flex flex-col w-full">{currentContent}</div>
       )}
       {onEdit ? (
         <button
